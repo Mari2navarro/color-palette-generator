@@ -1,5 +1,6 @@
 const characters = "0123456789ABCDEF";
 
+/* Función que genera un color aleatorio */
 function generateRandomColor() {
   let color = "#";
 
@@ -11,6 +12,18 @@ function generateRandomColor() {
   }
 
   return color;
+}
+
+const palette = document.querySelector(".palette");
+
+for (let i = 0; i < 5; i++) {
+  const color = generateRandomColor();
+
+  const colorElement = document.createElement("div");
+
+  colorElement.classList.add("color");
+
+  palette.appendChild(colorElement);
 }
 
 console.log(generateRandomColor());
