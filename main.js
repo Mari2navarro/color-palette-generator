@@ -14,6 +14,7 @@ function generateRandomColor() {
 }
 
 const palette = document.querySelector(".palette");
+const generateButton = document.querySelector(".generate-button");
 
 function generatePalette() {
   palette.innerHTML = "";
@@ -32,3 +33,4 @@ function generatePalette() {
 }
 
 generatePalette();
+generateButton.addEventListener("click", generatePalette);
