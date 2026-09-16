@@ -28,6 +28,12 @@ function generatePalette() {
 
     colorElement.style.backgroundColor = color;
 
+    colorElement.textContent = color;
+
+    colorElement.addEventListener("click", () => {
+      navigator.clipboard.writeText(color);
+    });
+
     palette.appendChild(colorElement);
   }
 }

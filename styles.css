@@ -25,6 +25,7 @@ body {
 .color {
   height: 300px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 @media (max-width: 700px) {
