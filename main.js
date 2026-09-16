@@ -15,6 +15,7 @@ function generateRandomColor() {
 
 const palette = document.querySelector(".palette");
 const generateButton = document.querySelector(".generate-button");
+const copyMessage = document.querySelector(".copy-message");
 
 function generatePalette() {
   palette.innerHTML = "";
@@ -32,9 +33,8 @@ function generatePalette() {
 
     colorElement.addEventListener("click", () => {
       navigator.clipboard.writeText(color);
-      alert(`¡$¨{color} copiado"`);
+      copyMessage.textContent = `${color} copiado`;
     });
-
     palette.appendChild(colorElement);
   }
 }

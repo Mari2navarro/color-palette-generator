@@ -33,6 +33,12 @@ body {
   border-radius: 10px;
 }
 
+.app__subtitle {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #666;
+}
+
 .palette {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -51,6 +57,7 @@ body {
   font-weight: bold;
   cursor: pointer;
   transition: transform 0.2s ease;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .color:hover {
