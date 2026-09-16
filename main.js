@@ -32,6 +32,7 @@ function generatePalette() {
 
     colorElement.addEventListener("click", () => {
       navigator.clipboard.writeText(color);
+      alert(`¡$¨{color} copiado"`);
     });
 
     palette.appendChild(colorElement);
