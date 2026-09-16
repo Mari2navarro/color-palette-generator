@@ -23,6 +23,8 @@ for (let i = 0; i < 5; i++) {
 
   colorElement.classList.add("color");
 
+  colorElement.style.backgroundColor = color;
+
   palette.appendChild(colorElement);
 }
 
